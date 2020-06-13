@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { IInput } from "./props/formComponentsInterface"
-import { EMAIL_REGEX } from "utils/consts"
+import { EMAIL_REGEX } from "src/utils/consts"
 
 const InputEmail: FC<IInput> = ({ register, errors, placeholder }) => (
   <>

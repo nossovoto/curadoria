@@ -1,15 +1,15 @@
 import { useContext, BaseSyntheticEvent } from 'react'
 import { useForm } from 'react-hook-form'
-import { IAuthActionType, IUserCredencial } from 'auth_provider/interfaces'
+import { IAuthActionType, IUserCredencial } from 'authProvider/interfaces'
 import InputUserName from 'components/formComponent/inputUserName'
 import InputPassword from 'components/formComponent/inputPassword'
-import AuthContext from 'auth_provider/context'
 import { encrypt } from 'utils/crypto-util'
+import { authContext } from 'authProvider/authContext'
 
 const LoginForm = () => {
 
     const { register, errors, handleSubmit } = useForm()
-    const { dispatch } = useContext(AuthContext)
+    const { dispatch } = useContext(authContext)
 
     const submit = async ({ username, password }: any, e: BaseSyntheticEvent | undefined) => {
         try

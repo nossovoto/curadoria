@@ -1,7 +1,7 @@
 import { AppProps, AppContext } from 'next/app'
 import { NextPageContext } from 'next'
 import Layout from "components/layout/layout"
-import UserAuthProvider from 'auth_provider/provider'
+import UserAuthProvider from 'authProvider/authContext'
 import "public/theme.scss"
 
 // Will be called once for every metric that has to be reported.

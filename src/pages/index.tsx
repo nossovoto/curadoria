@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import AuthContext from '../auth_provider/context';
-import { IAuthActionType } from '../auth_provider/interfaces';
+import { authContext } from '../authProvider/authContext'
+import { IAuthActionType } from '../authProvider/interfaces'
 
 const Index = () => {
 
-	const { auth, dispatch } = useContext(AuthContext);
+	const { auth, dispatch } = useContext(authContext)
 
 	return (
 		<>

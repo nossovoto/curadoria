@@ -7,7 +7,7 @@ function ErrorPage({ statusCode }: ErrorProps) {
 
 ErrorPage.getInitialProps = async ({ res }: NextPageContext) => {
 
-    var statusCode = res?.statusCode
+    const statusCode = res?.statusCode
 
     if (statusCode)
     {
@@ -29,6 +29,6 @@ ErrorPage.getInitialProps = async ({ res }: NextPageContext) => {
         return { statusCode }
     } else
         return { statusCode: 500 }
-};
+}
 
 export default ErrorPage
